@@ -1,0 +1,7 @@
+{
+  "$schema": "https://schema.zeabur.app/template.json",
+  "build_command": "npm install && cd server && npm install && npm run build && cd ../client && npm install && npm run build",
+  "start_command": "cd server && npm run start",
+  "output_dir": ".",
+  "node_version": "18"
+}
