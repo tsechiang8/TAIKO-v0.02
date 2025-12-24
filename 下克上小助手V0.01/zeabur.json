@@ -1,7 +1,8 @@
 {
-  "$schema": "https://schema.zeabur.app/template.json",
+  "$schema": "https://schema.zeabur.app/zeabur.json",
   "build_command": "npm install && cd server && npm install && npm run build && cd ../client && npm install && npm run build",
-  "start_command": "cd server && npm run start",
+  "start_command": "NODE_ENV=production node server/dist/index.js",
   "output_dir": ".",
-  "node_version": "18"
+  "serverless": false
 }
+
