@@ -1,0 +1,50 @@
+[
+  {
+    "userId": "admin",
+    "userType": "admin",
+    "action": "advance_year",
+    "details": {
+      "previousYear": 4,
+      "newYear": 5,
+      "factionCount": 1
+    },
+    "id": "7acab90c-0b7a-4b25-8e4d-bee32fa5ebcf",
+    "timestamp": "2025-12-24T01:27:35.655Z"
+  },
+  {
+    "userId": "admin",
+    "userType": "admin",
+    "action": "advance_year",
+    "details": {
+      "previousYear": 3,
+      "newYear": 4,
+      "factionCount": 1
+    },
+    "id": "4e49d748-c580-46ab-b1e1-0f4281a1c7dd",
+    "timestamp": "2025-12-24T01:16:46.753Z"
+  },
+  {
+    "userId": "admin",
+    "userType": "admin",
+    "action": "advance_year",
+    "details": {
+      "previousYear": 2,
+      "newYear": 3,
+      "factionCount": 1
+    },
+    "id": "7c172d35-f17c-4e93-97aa-8e51ef67faa4",
+    "timestamp": "2025-12-24T01:15:48.776Z"
+  },
+  {
+    "userId": "admin",
+    "userType": "admin",
+    "action": "advance_year",
+    "details": {
+      "previousYear": 1,
+      "newYear": 2,
+      "factionCount": 1
+    },
+    "id": "6a18bb2d-0713-4e12-8685-af1085a6791f",
+    "timestamp": "2025-12-23T09:39:45.230Z"
+  }
+]

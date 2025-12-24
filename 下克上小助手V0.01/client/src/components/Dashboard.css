@@ -1,0 +1,468 @@
+/**
+ * 仪表盘样式
+ */
+
+.dashboard {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.dashboard-header {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-left h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.lord-name {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.admin-btn {
+  padding: 8px 16px;
+  background: #4a90d9;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 12px;
+}
+
+.admin-btn:hover {
+  background: #3a7bc8;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.info-section {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h2 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+/* 带按钮的section header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  color: #1a1a2e;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.recruit-btn {
+  padding: 8px 16px;
+  background: #4a90d9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.recruit-btn:hover {
+  background: #3a7bc8;
+}
+
+.disband-btn {
+  padding: 8px 16px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.disband-btn:hover {
+  background: #c0392b;
+}
+
+.section-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.info-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.info-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.info-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.info-unit {
+  font-size: 14px;
+  font-weight: normal;
+  color: #888;
+  margin-left: 4px;
+}
+
+.info-sub {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* 增益列表 */
+.buffs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buff-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.buff-name {
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.buff-effect {
+  color: #27ae60;
+  font-size: 14px;
+}
+
+/* 详情列表 */
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  color: #666;
+  font-size: 14px;
+}
+
+.detail-value {
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.detail-unit {
+  font-size: 12px;
+  color: #888;
+  margin-left: 4px;
+}
+
+/* 加载状态 */
+.dashboard-loading {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #1a1a2e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 错误状态 */
+.dashboard-error {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  gap: 16px;
+}
+
+.dashboard-error p {
+  color: #e74c3c;
+  font-size: 16px;
+}
+
+.dashboard-error button {
+  padding: 10px 20px;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.dashboard-error button:hover {
+  background: #16213e;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* 购买装备按钮 */
+.purchase-btn {
+  padding: 8px 16px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.purchase-btn:hover {
+  background: #219a52;
+}
+
+/* 税率卡片 */
+.tax-rate-card {
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.tax-rate-card:hover {
+  background: #e8f4fd;
+  transform: translateY(-2px);
+}
+
+.info-value.clickable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.edit-icon {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.tax-rate-card:hover .edit-icon {
+  opacity: 1;
+}
+
+.info-sub.warning {
+  color: #e67e22;
+}
+
+/* 税率选择器 */
+.tax-rate-selector {
+  margin-top: 16px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.selector-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.selector-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+  padding: 0 4px;
+}
+
+.selector-header .close-btn:hover {
+  color: #333;
+}
+
+.rate-options {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.rate-option {
+  flex: 1;
+  padding: 12px 16px;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.rate-option:hover:not(:disabled) {
+  border-color: #4a90d9;
+  background: #e8f4fd;
+}
+
+.rate-option.current {
+  border-color: #27ae60;
+  background: #e8f8f0;
+  cursor: default;
+}
+
+.rate-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.current-label {
+  font-size: 11px;
+  color: #27ae60;
+  font-weight: normal;
+}
+
+.selector-note {
+  font-size: 12px;
+  color: #e67e22;
+  text-align: center;
+}
+
+
+/* 新建军团按钮 */
+.create-legion-btn {
+  padding: 8px 16px;
+  background: #9b59b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.create-legion-btn:hover {
+  background: #8e44ad;
+}
+
+/* 空列表提示 */
+.empty-list {
+  text-align: center;
+  padding: 24px;
+  color: #888;
+  font-size: 14px;
+}

@@ -1,0 +1,200 @@
+/**
+ * 收支明细表样式
+ */
+
+.income-expense-breakdown {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 20px;
+}
+
+.breakdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.breakdown-header:hover {
+  background: #f0f0f0;
+}
+
+.breakdown-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.net-income {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.net-income.positive {
+  color: #27ae60;
+}
+
+.net-income.negative {
+  color: #e74c3c;
+}
+
+.breakdown-content {
+  padding: 20px;
+}
+
+.breakdown-section {
+  margin-bottom: 20px;
+}
+
+.breakdown-section:last-of-type {
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section-title.income-title {
+  color: #27ae60;
+}
+
+.section-title.expense-title {
+  color: #e74c3c;
+}
+
+.section-title.bonus-title {
+  color: #f39c12;
+}
+
+.breakdown-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.item-name {
+  font-size: 14px;
+  color: #1a1a2e;
+}
+
+.item-note {
+  font-size: 12px;
+  color: #888;
+}
+
+.item-value {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-value.positive {
+  color: #27ae60;
+}
+
+.item-value.negative {
+  color: #e74c3c;
+}
+
+.breakdown-subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #e8f5e9;
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.breakdown-subtotal .positive {
+  color: #27ae60;
+}
+
+.breakdown-subtotal .negative {
+  color: #e74c3c;
+}
+
+.breakdown-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.breakdown-total .positive {
+  color: #4ade80;
+}
+
+.breakdown-total .negative {
+  color: #f87171;
+}
+
+.growth-rate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #fff8e1;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.growth-rate .positive {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.growth-rate .negative {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+/* 响应式 */
+@media (max-width: 480px) {
+  .breakdown-header {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .breakdown-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .item-value {
+    align-self: flex-end;
+  }
+}

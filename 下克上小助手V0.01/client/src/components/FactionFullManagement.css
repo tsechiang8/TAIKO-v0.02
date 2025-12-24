@@ -1,0 +1,177 @@
+/**
+ * 势力完整管理样式
+ */
+
+.faction-full-management {
+  padding: 16px;
+}
+
+.faction-full-management .management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.faction-full-management .management-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #1a1a2e;
+}
+
+.faction-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faction-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+.faction-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.faction-card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #1a1a2e;
+}
+
+.faction-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.faction-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.faction-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.faction-field label {
+  font-size: 12px;
+  color: #666;
+}
+
+.faction-field span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.faction-field span.code {
+  font-family: monospace;
+  background: #e8f5e9;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #2e7d32;
+}
+
+.faction-buffs {
+  margin-top: 12px;
+  padding: 12px;
+  background: #fff8e1;
+  border-radius: 8px;
+}
+
+.faction-buffs > label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.faction-buffs .buffs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.buff-tag {
+  font-size: 12px;
+  padding: 4px 8px;
+  background: #fff;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  color: #f57c00;
+}
+
+/* 编辑弹窗 */
+.modal-large {
+  max-width: 700px;
+  width: 90%;
+}
+
+.edit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.edit-grid .form-group {
+  margin-bottom: 0;
+}
+
+.edit-grid .form-group label {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.edit-grid .form-group input,
+.edit-grid .form-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.edit-grid .form-group input:focus,
+.edit-grid .form-group select:focus {
+  outline: none;
+  border-color: #4a90d9;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .faction-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .edit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .faction-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .edit-grid {
+    grid-template-columns: 1fr;
+  }
+}

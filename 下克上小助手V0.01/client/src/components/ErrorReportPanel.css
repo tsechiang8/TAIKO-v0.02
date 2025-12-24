@@ -1,0 +1,295 @@
+/**
+ * 错误报告管理面板样式
+ */
+
+.error-report-panel {
+  padding: 20px;
+}
+
+.error-report-panel h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.error-report-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.error-report-filters select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.error-report-filters button {
+  padding: 8px 16px;
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error-report-filters button:hover {
+  background: #16213e;
+}
+
+.error-report-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .error-report-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error-report-list {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.no-reports {
+  padding: 40px;
+  text-align: center;
+  color: #888;
+}
+
+.error-report-item {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.error-report-item:hover {
+  background: #f8f9fa;
+}
+
+.error-report-item.selected {
+  background: #e3f2fd;
+  border-left: 3px solid #2196f3;
+}
+
+.error-report-item.resolved {
+  opacity: 0.7;
+}
+
+.report-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.report-type {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.report-type.manual {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.report-type.automatic {
+  background: #fce4ec;
+  color: #c2185b;
+}
+
+.report-status {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.report-status.pending {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.report-status.resolved {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.report-info {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.report-player {
+  font-weight: 500;
+  color: #333;
+}
+
+.report-faction {
+  color: #666;
+}
+
+.report-time {
+  font-size: 12px;
+  color: #888;
+}
+
+.report-message-preview {
+  margin-top: 8px;
+  font-size: 13px;
+  color: #666;
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+/* 详情面板 */
+.error-report-detail {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.error-report-detail h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.detail-section {
+  margin-bottom: 16px;
+}
+
+.detail-section label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.detail-section span {
+  font-size: 14px;
+  color: #333;
+}
+
+.status-resolved {
+  color: #2e7d32 !important;
+}
+
+.status-pending {
+  color: #c62828 !important;
+}
+
+.error-description {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.operations-list {
+  background: #f5f5f5;
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.no-operations {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+}
+
+.operation-item {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.operation-item:last-child {
+  border-bottom: none;
+}
+
+.operation-time {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 4px;
+}
+
+.operation-action {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.operation-details {
+  font-size: 12px;
+  color: #666;
+  background: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.btn-resolve {
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-resolve:hover {
+  background: #43a047;
+}
+
+.btn-delete {
+  padding: 10px 20px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #e53935;
+}
+
+.loading {
+  padding: 40px;
+  text-align: center;
+  color: #888;
+}
+
+.error-message {
+  padding: 12px;
+  background: #ffebee;
+  color: #c62828;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}

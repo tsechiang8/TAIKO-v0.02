@@ -1,0 +1,57 @@
+/**
+ * 外交关系列表样式
+ * Requirements: 3.3
+ */
+
+.diplomacy-list {
+  width: 100%;
+}
+
+.faction-name {
+  font-weight: 500;
+  color: #1a1a2e;
+}
+
+.relation-badge {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.relation-badge.alliance {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.relation-badge.hostile,
+.relation-badge.war {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.relation-badge.neutral {
+  background: #f5f5f5;
+  color: #666;
+}
+
+.relation-badge.vassal {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.relation-badge.suzerain {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.relation-badge.truce {
+  background: #fce4ec;
+  color: #ad1457;
+}
+
+.relation-badge.default {
+  background: #f0f0f0;
+  color: #333;
+}

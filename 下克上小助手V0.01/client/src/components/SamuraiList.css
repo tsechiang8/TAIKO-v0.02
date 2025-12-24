@@ -1,0 +1,88 @@
+/**
+ * 武士列表样式
+ * Requirements: 3.2
+ */
+
+.samurai-list {
+  width: 100%;
+}
+
+.samurai-type {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.samurai-type.warrior {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.samurai-type.strategist {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.stat-value.martial {
+  color: #c62828;
+}
+
+.stat-value.civil {
+  color: #1565c0;
+}
+
+.samurai-status {
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.samurai-status.idle {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.samurai-status.busy {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.action-points {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.action-points.ap-full .ap-current {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.action-points.ap-half .ap-current {
+  color: #f39c12;
+  font-weight: 600;
+}
+
+.action-points.ap-empty .ap-current {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.ap-current {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.ap-separator {
+  color: #999;
+}
+
+.ap-max {
+  color: #999;
+}

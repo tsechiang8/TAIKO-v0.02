@@ -1,0 +1,32 @@
+[
+  {
+    "id": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+    "name": "织田",
+    "lordName": "织田信长",
+    "code": "oda",
+    "taxRate": 0.6,
+    "treasury": 88678.488,
+    "idleSoldiers": 1220,
+    "rifles": 122,
+    "horses": 333,
+    "cannons": 22,
+    "agriculturePoints": 45,
+    "commercePoints": 33,
+    "navyPoints": 33,
+    "armamentPoints": 33,
+    "industryKokudaka": 10000,
+    "territoryIds": [
+      "d60d99e5-dc49-49c8-addd-00c2b3b6eaf7",
+      "2ea168bf-e2e1-480e-81bc-748544ea60aa",
+      "f21f1067-098e-47ca-a0f6-0ba92cca6247",
+      "43adb6d5-e741-4e10-aaa9-f39578d94845",
+      "098fce6e-ecef-4e17-bb77-bf30ca3d49b2"
+    ],
+    "samuraiIds": [
+      "7ca48d12-33a8-40e4-af4d-b17517865d59"
+    ],
+    "legionIds": [],
+    "diplomacy": [],
+    "buffs": []
+  }
+]

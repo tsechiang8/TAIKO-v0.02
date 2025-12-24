@@ -1,0 +1,111 @@
+/**
+ * 通用数据表格样式
+ * Requirements: 12.2, 12.3, 12.4
+ */
+
+.data-table-container {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+/* 固定表头 */
+.data-table-header {
+  background: #f8f9fa;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.data-table-header .data-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.data-table-header th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 可滚动表体 */
+.data-table-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.data-table-body.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: #c0c0c0 #f0f0f0;
+}
+
+.data-table-body.scrollable::-webkit-scrollbar {
+  width: 8px;
+}
+
+.data-table-body.scrollable::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.data-table-body.scrollable::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 4px;
+}
+
+.data-table-body.scrollable::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+.data-table-body .data-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.data-table-body td {
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-table-body tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table-body tr.clickable {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.data-table-body tr.clickable:hover {
+  background-color: #f5f7fa;
+}
+
+.data-table-body tr.empty-row td {
+  text-align: center;
+  color: #999;
+  padding: 24px 16px;
+}
+
+/* 通用表格样式 */
+.data-table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .data-table-header th,
+  .data-table-body td {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}

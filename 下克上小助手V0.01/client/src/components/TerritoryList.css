@@ -1,0 +1,46 @@
+/**
+ * 领地列表样式
+ * Requirements: 3.1
+ */
+
+.territory-list {
+  width: 100%;
+}
+
+.castle-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.castle-level {
+  font-size: 11px;
+  color: #666;
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.special-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.product-tag {
+  font-size: 12px;
+  background: #e8f4fd;
+  color: #1976d2;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.no-product,
+.no-garrison {
+  color: #999;
+}
+
+.garrison-name {
+  color: #2e7d32;
+  font-weight: 500;
+}

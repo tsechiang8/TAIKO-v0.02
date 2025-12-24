@@ -1,0 +1,13 @@
+[
+  {
+    "id": "7ca48d12-33a8-40e4-af4d-b17517865d59",
+    "name": "韩永超",
+    "age": 25,
+    "type": "warrior",
+    "martialValue": 44,
+    "civilValue": 100,
+    "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+    "isIdle": true,
+    "actionPoints": 2
+  }
+]

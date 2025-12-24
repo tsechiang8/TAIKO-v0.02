@@ -1,0 +1,34 @@
+import { FactionData, Territory, Samurai, Legion, SpecialProduct, GameState, DataSnapshot, OperationRecord, ErrorReport } from '../types';
+export declare function readJsonFile<T>(filename: string, defaultValue: T): T;
+export declare function writeJsonFile<T>(filename: string, data: T): void;
+export declare function getFactions(): FactionData[];
+export declare function saveFactions(factions: FactionData[]): void;
+export declare function getFactionById(id: string): FactionData | undefined;
+export declare function getFactionByCode(code: string): FactionData | undefined;
+export declare function getTerritories(): Territory[];
+export declare function saveTerritories(territories: Territory[]): void;
+export declare function getSamurais(): Samurai[];
+export declare function saveSamurais(samurais: Samurai[]): void;
+export declare function getLegions(): Legion[];
+export declare function saveLegions(legions: Legion[]): void;
+export declare function getSpecialProducts(): SpecialProduct[];
+export declare function saveSpecialProducts(products: SpecialProduct[]): void;
+export declare function getGameState(): GameState;
+export declare function saveGameState(state: GameState): void;
+export declare function getOperationRecords(): OperationRecord[];
+export declare function saveOperationRecords(records: OperationRecord[]): void;
+export declare function addOperationRecord(record: Omit<OperationRecord, 'id' | 'timestamp'>): OperationRecord;
+export declare function getErrorReports(): ErrorReport[];
+export declare function saveErrorReports(reports: ErrorReport[]): void;
+export declare function addErrorReport(report: Omit<ErrorReport, 'id' | 'timestamp'>): ErrorReport;
+export declare function createSnapshot(operationId: string): DataSnapshot;
+export declare function getSnapshot(snapshotId: string): DataSnapshot | null;
+export declare function restoreFromSnapshot(snapshotId: string): boolean;
+export declare function listSnapshots(): {
+    id: string;
+    timestamp: string;
+    operationId: string;
+}[];
+export declare function cleanupOldSnapshots(keepCount?: number): void;
+export declare function getAllData(): DataSnapshot['data'];
+//# sourceMappingURL=index.d.ts.map

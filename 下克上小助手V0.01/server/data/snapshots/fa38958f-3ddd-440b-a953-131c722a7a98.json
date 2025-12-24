@@ -1,0 +1,54 @@
+{
+  "id": "fa38958f-3ddd-440b-a953-131c722a7a98",
+  "timestamp": "2025-12-23T09:39:45.231Z",
+  "operationId": "6a18bb2d-0713-4e12-8685-af1085a6791f",
+  "data": {
+    "factions": [
+      {
+        "id": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "name": "织田",
+        "lordName": "织田信长",
+        "code": "oda",
+        "taxRate": 0.6,
+        "treasury": 91895.2,
+        "idleSoldiers": 1220,
+        "rifles": 122,
+        "horses": 333,
+        "cannons": 22,
+        "agriculturePoints": 33,
+        "commercePoints": 33,
+        "navyPoints": 33,
+        "armamentPoints": 33,
+        "industryKokudaka": 10000,
+        "territoryIds": [],
+        "samuraiIds": [
+          "7ca48d12-33a8-40e4-af4d-b17517865d59"
+        ],
+        "legionIds": [],
+        "diplomacy": [],
+        "buffs": []
+      }
+    ],
+    "territories": [],
+    "samurais": [
+      {
+        "id": "7ca48d12-33a8-40e4-af4d-b17517865d59",
+        "name": "韩永超",
+        "age": 25,
+        "type": "warrior",
+        "martialValue": 44,
+        "civilValue": 100,
+        "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "isIdle": true,
+        "actionPoints": 2
+      }
+    ],
+    "legions": [],
+    "specialProducts": [],
+    "gameState": {
+      "currentYear": 2,
+      "isLocked": false,
+      "adminCode": "admin"
+    }
+  }
+}

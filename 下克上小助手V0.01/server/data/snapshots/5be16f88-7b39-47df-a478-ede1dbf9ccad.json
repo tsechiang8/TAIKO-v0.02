@@ -1,0 +1,115 @@
+{
+  "id": "5be16f88-7b39-47df-a478-ede1dbf9ccad",
+  "timestamp": "2025-12-24T01:16:46.755Z",
+  "operationId": "4e49d748-c580-46ab-b1e1-0f4281a1c7dd",
+  "data": {
+    "factions": [
+      {
+        "id": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "name": "织田",
+        "lordName": "织田信长",
+        "code": "oda",
+        "taxRate": 0.6,
+        "treasury": 60942.8,
+        "idleSoldiers": 1220,
+        "rifles": 122,
+        "horses": 333,
+        "cannons": 22,
+        "agriculturePoints": 45,
+        "commercePoints": 33,
+        "navyPoints": 33,
+        "armamentPoints": 33,
+        "industryKokudaka": 10000,
+        "territoryIds": [
+          "d60d99e5-dc49-49c8-addd-00c2b3b6eaf7",
+          "2ea168bf-e2e1-480e-81bc-748544ea60aa",
+          "f21f1067-098e-47ca-a0f6-0ba92cca6247",
+          "43adb6d5-e741-4e10-aaa9-f39578d94845",
+          "098fce6e-ecef-4e17-bb77-bf30ca3d49b2"
+        ],
+        "samuraiIds": [
+          "7ca48d12-33a8-40e4-af4d-b17517865d59"
+        ],
+        "legionIds": [],
+        "diplomacy": [],
+        "buffs": []
+      }
+    ],
+    "territories": [
+      {
+        "id": "d60d99e5-dc49-49c8-addd-00c2b3b6eaf7",
+        "provinceName": "阿波",
+        "districtName": "板野郡",
+        "castleName": "胜瑞城",
+        "castleLevel": 4,
+        "baseKokudaka": 37539,
+        "specialProduct1": "阿波正蓝",
+        "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "description": "阿波蓝。吉野川下游肥沃的土地极度适合种植蓼蓝。这里生产的蓝染料品质天下第一，以此染出的“日本蓝”布料价值连城。"
+      },
+      {
+        "id": "2ea168bf-e2e1-480e-81bc-748544ea60aa",
+        "provinceName": "阿波",
+        "districtName": "名东郡",
+        "castleName": "德岛城",
+        "castleLevel": 4,
+        "baseKokudaka": 37539,
+        "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "description": "吉野川河口三角洲。水运极其便利，是阿波蓝染料运往大阪和京都的港口。"
+      },
+      {
+        "id": "f21f1067-098e-47ca-a0f6-0ba92cca6247",
+        "provinceName": "阿波",
+        "districtName": "那贺郡",
+        "castleName": "牛岐城",
+        "castleLevel": 3,
+        "baseKokudaka": 28154,
+        "specialProduct1": "木材",
+        "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "description": "那贺川流域。上游有着极其茂密的森林，出产优质杉木。下游则是富庶的港口城市。"
+      },
+      {
+        "id": "43adb6d5-e741-4e10-aaa9-f39578d94845",
+        "provinceName": "阿波",
+        "districtName": "三好郡",
+        "castleName": "白地城",
+        "castleLevel": 3,
+        "baseKokudaka": 28154,
+        "specialProduct1": "南蛮烟草",
+        "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "description": "四国的十字路口。位于内陆深处，地势险要。气候适合种植著名的“阿波叶”烟草，切丝细致，风味柔和。"
+      },
+      {
+        "id": "098fce6e-ecef-4e17-bb77-bf30ca3d49b2",
+        "provinceName": "阿波",
+        "districtName": "海部郡",
+        "castleName": "基础城",
+        "castleLevel": 1,
+        "baseKokudaka": 9384,
+        "specialProduct1": "刀具",
+        "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "description": "阿波最南端。海部川流域出产著名的“海部刀”，这种刀以切味犀利著称，深受海贼和实战派武士喜爱。"
+      }
+    ],
+    "samurais": [
+      {
+        "id": "7ca48d12-33a8-40e4-af4d-b17517865d59",
+        "name": "韩永超",
+        "age": 25,
+        "type": "warrior",
+        "martialValue": 44,
+        "civilValue": 100,
+        "factionId": "67d71200-f3ca-4f1d-b59f-2c9bea0fb193",
+        "isIdle": true,
+        "actionPoints": 2
+      }
+    ],
+    "legions": [],
+    "specialProducts": [],
+    "gameState": {
+      "currentYear": 4,
+      "isLocked": false,
+      "adminCode": "admin"
+    }
+  }
+}

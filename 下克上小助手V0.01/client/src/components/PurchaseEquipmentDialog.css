@@ -1,0 +1,132 @@
+/**
+ * 装备购买对话框样式
+ */
+
+.purchase-dialog {
+  max-width: 500px;
+  width: 90%;
+}
+
+.treasury-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.treasury-value {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.equipment-row {
+  margin-bottom: 16px;
+  padding: 12px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.equipment-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.equipment-name {
+  font-weight: 500;
+  color: #333;
+}
+
+.equipment-price {
+  color: #666;
+  font-size: 13px;
+}
+
+.equipment-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.equipment-input input[type="range"] {
+  flex: 1;
+  height: 6px;
+  -webkit-appearance: none;
+  background: #ddd;
+  border-radius: 3px;
+  outline: none;
+}
+
+.equipment-input input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #1976d2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.equipment-input input[type="number"] {
+  width: 80px;
+  padding: 6px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.equipment-subtotal {
+  min-width: 100px;
+  text-align: right;
+  color: #666;
+  font-size: 13px;
+}
+
+.total-section {
+  margin-top: 20px;
+  padding: 16px;
+  background: #e3f2fd;
+  border-radius: 8px;
+}
+
+.total-row,
+.remaining-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.total-row {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.total-value {
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.total-value.over-budget {
+  color: #d32f2f;
+}
+
+.remaining-value {
+  color: #388e3c;
+}
+
+.remaining-value.negative {
+  color: #d32f2f;
+}
+
+.error-message {
+  margin-top: 12px;
+  padding: 8px 12px;
+  background: #ffebee;
+  color: #d32f2f;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 13px;
+}

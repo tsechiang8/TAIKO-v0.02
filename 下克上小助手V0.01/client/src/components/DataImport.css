@@ -1,0 +1,348 @@
+/**
+ * 数据导入组件样式
+ * Requirements: 10.1-10.4
+ */
+
+.data-import {
+  padding: 20px;
+}
+
+.data-import h2 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* 类型选择 */
+.import-type-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.type-btn {
+  padding: 12px 24px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.type-btn:hover {
+  border-color: #4a90d9;
+  background: #f0f7ff;
+}
+
+.type-btn.active {
+  border-color: #4a90d9;
+  background: #4a90d9;
+  color: #fff;
+}
+
+/* 模板信息 */
+.template-info {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.template-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.template-info p {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.template-header {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* 文本输入区域 */
+.import-input-section {
+  margin-bottom: 20px;
+}
+
+.import-input-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.import-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.import-textarea:focus {
+  outline: none;
+  border-color: #4a90d9;
+}
+
+.import-textarea::placeholder {
+  color: #999;
+}
+
+/* 操作按钮 */
+.import-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.preview-btn,
+.import-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preview-btn {
+  background: #6c757d;
+  color: #fff;
+}
+
+.preview-btn:hover:not(:disabled) {
+  background: #5a6268;
+}
+
+.import-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+.import-btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+.preview-btn:disabled,
+.import-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 覆盖选项 */
+.overwrite-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.overwrite-option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.overwrite-option label {
+  cursor: pointer;
+  color: #666;
+}
+
+/* 预览结果 */
+.preview-result {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.preview-result h3 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.preview-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.preview-stats span {
+  color: #666;
+}
+
+.preview-stats .count {
+  font-weight: 600;
+  color: #333;
+}
+
+/* 预览表格 */
+.preview-table-container {
+  max-height: 300px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.preview-table th,
+.preview-table td {
+  padding: 8px 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.preview-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+.preview-table tr:hover {
+  background: #f8f9fa;
+}
+
+/* 错误和警告 */
+.import-messages {
+  margin-bottom: 20px;
+}
+
+.error-list,
+.warning-list {
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.error-list {
+  background: #fff5f5;
+  border: 1px solid #ffcdd2;
+}
+
+.warning-list {
+  background: #fffde7;
+  border: 1px solid #fff59d;
+}
+
+.error-list h4,
+.warning-list h4 {
+  margin: 0 0 10px 0;
+  font-size: 0.95rem;
+}
+
+.error-list h4 {
+  color: #c62828;
+}
+
+.warning-list h4 {
+  color: #f57f17;
+}
+
+.error-list ul,
+.warning-list ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.error-list li {
+  color: #c62828;
+  margin-bottom: 5px;
+}
+
+.warning-list li {
+  color: #f57f17;
+  margin-bottom: 5px;
+}
+
+/* 导入结果 */
+.import-result {
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.import-result.success {
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+}
+
+.import-result.partial {
+  background: #fffde7;
+  border: 1px solid #fff59d;
+}
+
+.import-result.error {
+  background: #fff5f5;
+  border: 1px solid #ffcdd2;
+}
+
+.import-result h3 {
+  margin: 0 0 10px 0;
+}
+
+.import-result.success h3 {
+  color: #2e7d32;
+}
+
+.import-result.partial h3 {
+  color: #f57f17;
+}
+
+.import-result.error h3 {
+  color: #c62828;
+}
+
+.import-result p {
+  margin: 0;
+  color: #666;
+}
+
+/* 加载状态 */
+.loading-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  color: #666;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ddd;
+  border-top-color: #4a90d9;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

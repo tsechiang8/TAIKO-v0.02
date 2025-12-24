@@ -1,0 +1,307 @@
+/**
+ * 编辑军团人数弹窗样式
+ */
+
+.edit-soldiers-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.edit-soldiers-dialog {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 420px;
+  overflow: hidden;
+}
+
+.edit-soldiers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f5f5f5;
+}
+
+.edit-soldiers-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.edit-soldiers-header .close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.edit-soldiers-content {
+  padding: 20px;
+}
+
+.info-section {
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+
+.info-section .info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 14px;
+}
+
+.info-section .label {
+  color: #666;
+}
+
+.info-section .value {
+  font-weight: 500;
+  color: #333;
+}
+
+.input-section {
+  margin-bottom: 16px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-section input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background: #e0e0e0;
+  outline: none;
+  margin-bottom: 12px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.input-section input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #4a90d9;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.number-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.number-input-wrapper input[type="number"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: right;
+}
+
+.number-input-wrapper input[type="number"]:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 2px rgba(74, 144, 217, 0.2);
+}
+
+.number-input-wrapper .unit {
+  color: #666;
+  font-size: 14px;
+}
+
+.preview-section {
+  margin-bottom: 16px;
+}
+
+.preview-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.preview-item.increase {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.preview-item.decrease {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.preview-item.unchanged {
+  background: #f5f5f5;
+  color: #666;
+  justify-content: center;
+}
+
+.warning-section {
+  background: #fff3cd;
+  color: #856404;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.edit-soldiers-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid #e0e0e0;
+  background: #f9f9f9;
+}
+
+.edit-soldiers-footer button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-soldiers-footer .cancel-btn {
+  background: white;
+  border: 1px solid #ccc;
+  color: #666;
+}
+
+.edit-soldiers-footer .cancel-btn:hover {
+  background: #f5f5f5;
+}
+
+.edit-soldiers-footer .confirm-btn {
+  background: #4a90d9;
+  border: none;
+  color: white;
+}
+
+.edit-soldiers-footer .confirm-btn:hover:not(:disabled) {
+  background: #3a7bc8;
+}
+
+.edit-soldiers-footer .confirm-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* 解散确认弹窗 */
+.disband-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.disband-confirm-dialog {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 380px;
+  overflow: hidden;
+}
+
+.disband-confirm-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ffebee;
+}
+
+.disband-confirm-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #c62828;
+}
+
+.disband-confirm-content {
+  padding: 20px;
+}
+
+.disband-confirm-content p {
+  margin: 0 0 12px 0;
+  color: #333;
+  line-height: 1.5;
+}
+
+.disband-confirm-content ul {
+  margin: 0 0 12px 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.disband-confirm-content li {
+  margin: 4px 0;
+}
+
+.disband-confirm-content .warning-text {
+  color: #c62828;
+  font-weight: 500;
+}
+
+.disband-confirm-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 20px;
+  border-top: 1px solid #e0e0e0;
+  background: #f9f9f9;
+}
+
+.disband-confirm-footer button {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.disband-confirm-footer .cancel-btn {
+  background: white;
+  border: 1px solid #ccc;
+  color: #666;
+}
+
+.disband-confirm-footer .danger-btn {
+  background: #c62828;
+  border: none;
+  color: white;
+}
+
+.disband-confirm-footer .danger-btn:hover {
+  background: #b71c1c;
+}
