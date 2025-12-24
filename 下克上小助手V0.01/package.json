@@ -7,9 +7,11 @@
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "cd server && npm run dev",
     "dev:client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
     "build": "npm run build:client && npm run build:server",
     "build:server": "cd server && npm run build",
     "build:client": "cd client && npm run build",
+    "build:all": "npm run install:all && npm run build",
     "start": "cd server && npm run start",
     "start:prod": "cross-env NODE_ENV=production npm run start",
     "test": "npm run test:server",
@@ -18,5 +20,8 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
